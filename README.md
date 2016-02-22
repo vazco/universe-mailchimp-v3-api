@@ -50,7 +50,7 @@ mailchimpAPI.addANewListMember({
 });
 ```
 
-you can use chain notation as well
+you can use chain notation as well:
 
 ```
 #!javascript
