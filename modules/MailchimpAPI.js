@@ -1,6 +1,7 @@
 import {Promise} from 'meteor/promise';
 import {HTTP} from 'meteor/http';
 import _ from 'lodash';
+import md5 from 'md5';
 
 class MailchimpAPI {
     constructor (apiKey = null, {timeout = 10000} = {}) {
@@ -95,6 +96,21 @@ class MailchimpAPI {
             ],
             body
         });
+    }
+
+    /**
+     * Removes a member from a mailing list.
+     * @param {String} list_id - List ID from mailchimp
+     * @param {string} email - An e-mail addres of the member who should be removed
+     * @returns {Promise} promise with response from mailchimp
+     */
+    removeAListMember ({list_id = '', email = ''}) {
+        return this._apiCall('DELETE', {
+            resource: [
+                {name: 'lists', value: list_id},
+                {name: 'members', value: md5(email.toLowerCase())}
+            ]
+        })
     }
     /*eslint-disable camelcase*/
 }
