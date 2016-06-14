@@ -1,7 +1,8 @@
 Package.describe({
     name: 'universe:mailchimp-v3-api',
-    version: '1.0.1',
-    summary: 'Wrapper for mailchimp APIv3'
+    version: '1.0.2',
+    summary: 'Wrapper for mailchimp APIv3',
+    git: 'https://github.com/vazco/universe-mailchimp-v3-api'
 });
 
 Npm.depends({
