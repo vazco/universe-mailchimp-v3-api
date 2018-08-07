@@ -1,6 +1,10 @@
-# Mailchimp API v3
+<h1 align="center">
+    <a href="https://github.com/vazco">vazco</a>/Universe Mailchimp v3 API
+</h1>
 
-Package for using newest Mailchimp API.
+&nbsp;
+
+Package for using the newest Mailchimp API.
 
 ## Implemented functions:
 
@@ -63,3 +67,9 @@ mailchimpAPI.setApiKey('your API key from Mailchimp').addANewListMember({
     }
 });
 ```
+
+### License
+
+<img src="https://vazco.eu/banner.png" align="right">
+
+**Like every package maintained by [Vazco](https://vazco.eu/), Universe Mailchimp v3 API is [MIT licensed](https://github.com/vazco/uniforms/blob/master/LICENSE).**
